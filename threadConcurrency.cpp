@@ -37,12 +37,16 @@ int main(){
 
 	//Joining means that the thread who invoked the new thread will wait for the new thread to finish execution, before it will continue its own execution
 	//hence All Threads joined is printed only after 3 sec
-	t1.join();
+/*	t1.join();
 	t2.join();
 	t3.join();
 	t4.detach();
 	t5.detach();
 	t6.detach();
+
+*/
+
+	pause_thread(40);
 	std::cout << "All threads joined!\n";
 	std::cout<<"Main thread ID :: "<<main_thread_id<<std::endl;
 
